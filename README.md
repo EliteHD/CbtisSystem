@@ -1,4 +1,4 @@
-# Aplicativo Web de Control de Inventario para el CBTIS 123 <img src="https://scontent.fmtt1-1.fna.fbcdn.net/v/t39.30808-6/298650625_546623163926574_5312328398360023178_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=PrBU0yg-u7UAX9HJK_p&_nc_ht=scontent.fmtt1-1.fna&oh=00_AfAQ7Dcm6LAcKFGbKENIiSlcRHHRma5NF9vIbj8mgZ7c-A&oe=6544EE33" width="100" alt="Logo del Aplicativo">
+# Aplicativo Web de Control de Inventario <img src="https://scontent.fmtt1-1.fna.fbcdn.net/v/t39.30808-6/298650625_546623163926574_5312328398360023178_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=PrBU0yg-u7UAX9HJK_p&_nc_ht=scontent.fmtt1-1.fna&oh=00_AfAQ7Dcm6LAcKFGbKENIiSlcRHHRma5NF9vIbj8mgZ7c-A&oe=6544EE33" width="100" alt="Logo del Aplicativo">
 
 ## Descripción del Proyecto
 
