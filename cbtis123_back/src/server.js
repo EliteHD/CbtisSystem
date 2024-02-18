@@ -7,6 +7,9 @@ const dotenv = require("dotenv");
 const authRoutes = require('./routes/auth.routes');
 const cookieParser = require('cookie-parser');
 
+
+const personasRoutes = require('./routes/persona.routes');
+
 // configuramos origin: http: // localhost: 9595.
 var corsOptions = {
     origin: "http://localhost:9595"
@@ -45,7 +48,7 @@ db.sequelize.sync({ force: false }).then(() => {
 }); */
 
 app.use('/api/auth', authRoutes);
-
+app.use('/api/people', personasRoutes);
 
 
 module.exports = app;
