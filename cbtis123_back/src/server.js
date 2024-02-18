@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const connectDB = require('./db');
 const dotenv = require("dotenv");
 const authRoutes = require('./routes/auth.routes');
+const cookieParser = require('cookie-parser');
 
 // configuramos origin: http: // localhost: 9595.
 var corsOptions = {
@@ -14,6 +15,7 @@ var app = express();
 app.use(cors());
 
 connectDB();
+app.use(cookieParser());
 
 // realizar parse de content-type - application/json de requests 
 app.use(bodyParser.json());
