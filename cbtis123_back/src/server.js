@@ -1,18 +1,23 @@
 const express = require("express"); //Construir API Rest
 const bodyParser = require("body-parser"); //ayuda a analizar la solicitud y crear el objeto req.body
 const cors = require("cors"); //proporciona middleware Express para habilitar CORS con varias opciones.
-
-// cree una aplicación Express
-const app = express();
+const morgan = require("morgan");
+const connectDB = require('./db');
+const dotenv = require("dotenv");
+const authRoutes = require('./routes/auth.routes');
 
 // configuramos origin: http: // localhost: 9595.
 var corsOptions = {
     origin: "http://localhost:9595"
 };
+var app = express();
+app.use(cors());
+
+connectDB();
 
 // realizar parse de content-type - application/json de requests 
 app.use(bodyParser.json());
-
+app.use(morgan('dev'));
 //  realizar parse de content-type - application/x-www-form-urlencoded de requests 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -37,9 +42,8 @@ db.sequelize.sync({ force: false }).then(() => {
     console.log("Eliminar y sincronizar db");
 }); */
 
+app.use('/api/auth', authRoutes);
 
-// asignar port para escuchar requests
-const PORT = process.env.PORT || 9595;
-app.listen(PORT, () => {
-    console.log(`Server esta ejecutandose en puerto ${PORT}.`);
-});
+
+
+module.exports = app;
