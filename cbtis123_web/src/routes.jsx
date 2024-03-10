@@ -39,7 +39,7 @@ export const routes = [
       {
         icon: <TableCellsIcon {...icon} />,
         name: "Usuarios",
-        path: "/tables",
+        path: "/usuarios",
         element: <Tables />,
       },
       {

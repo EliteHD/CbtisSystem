@@ -7,84 +7,77 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-
 export function SignIn() {
   return (
 
-    <section className="m-8 flex items-center justify-center ">
-      <div className="w-full mt-9 text-center">
-        <form className="mt-8 mb-2 rounded-lg shadow-xl bg-white p-5 mx-auto w-80 max-w-screen-lg lg:w-1/2">
-          <Typography variant="h2" className="font-bold">Iniciar Sesión</Typography>
-          <div className="mb-1 flex flex-col gap-6">
-            <Typography variant="small" color="blue-gray" className="-mb-3 text-left font-medium">
-              Usuario o Email
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="email@cbtis123.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+      
+      <div
+        class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0"
+      >
+        <div class="flex flex-col justify-center p-8 md:p-14">
+          <span class="mb-3 text-4xl font-bold">Bienvenido!</span>
+          <span class="font-light text-gray-400 mb-8">
+            Sistema para el reporte en el cuadro de necesidades
+          </span>
+          <div class="py-4">
+            <span class="mb-2 text-md">Correo Electronico</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="email"
+              id="email"
             />
-            <Typography variant="small" color="blue-gray" className="-mb-3 text-left  font-medium">
-              Contraseña
-            </Typography>
-            <Input
+          </div>
+          <div class="py-4">
+            <span class="mb-2 text-md">Contraseña</span>
+            <input
               type="password"
-              size="lg"
-              placeholder="********"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
+              name="pass"
+              id="pass"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
             />
           </div>
-          <div className="flex items-center justify-between gap-2 mt-4">
+          <div class="flex justify-between w-full py-4">
 
-            <Typography variant="small" className="font-medium text-red-900">
-              <a href="#">
-                Olvidaste tu contraseña?
-              </a>
-            </Typography>
-
-            <Typography variant="small" className="font-medium text-blue-gray-900">
-              <a href="#">
-                Solicitar cuenta
-              </a>
-            </Typography>
+            <span class="font-bold text-md">Olvide mi contraseña</span>
           </div>
+          <button
+            class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"
+          >
+            Iniciar Sesión
+          </button>
+          <button
+            class="w-full border items-center content-center border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-red-900 hover:text-white"
+          >
+            {/* icon microsoft */}
+            <img
+              src="https://img.icons8.com/color/48/000000/microsoft.png"
+              alt="microsoft"
+              class="w-7 h-7 inline-block mr-2"
+            />
 
-          <Button className="mt-6" fullWidth>
-            Sign In
-          </Button>
+            Iniciar Sesión con Microsoft
+          </button>
 
-
-          <div className="space-y-4 mt-5">
-            <Button size="lg" color="white" className="flex items-center gap-2 justify-center shadow-md transition-all duration-300 hover:bg-red-500 hover:text-white" fullWidth>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft" viewBox="0 0 16 16">
-                <path d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z" />
-                <defs>
-                  <clipPath id="clip0_1156_824">
-                    <rect width="16" height="16" fill="white" transform="translate(0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span>Iniciar con Microsoft</span>
-            </Button>
+        </div>
+        <div class="relative">
+          <img
+            src="https://images.pexels.com/photos/4219101/pexels-photo-4219101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="img"
+            class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
+          />
+          <div
+            class="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block"
+          >
+            <span class="text-white text-xl"
+            >Cuadro de necesiades<br />Departamento de Planeación
+              <br /><span className="text-sm text-gray-200" >Power by: Josias Dhz</span>
+            </span>
           </div>
-
-        </form>
-
-      </div >
-      {/*  <div className="w-2/5 h-full hidden lg:block">
-        <img
-          src="/img/bruce-mars.jpeg"
-          className="h-full w-full object-cover rounded-3xl"
-        />  
-      </div> */}
-
-    </section >
+        </div>
+      </div>
+    </div>
   );
 }
 

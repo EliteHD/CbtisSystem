@@ -9,16 +9,14 @@ export function Footer({ brandName, brandLink, routes }) {
     <footer className="py-2">
       <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
         <Typography variant="small" className="font-normal text-inherit">
-          &copy; {year}, made with{" "}
-          <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5 text-red-600" /> by{" "}
+          2024, made with{" "}
           <a
             href={brandLink}
             target="_blank"
             className="transition-colors hover:text-blue-500 font-bold"
           >
-            {brandName}
-          </a>{" "}
-          for a better web.
+          {brandName}
+          </a>{" "}Social Service 
         </Typography>
         <ul className="flex items-center gap-4">
           {routes.map(({ name, path }) => (
@@ -41,13 +39,11 @@ export function Footer({ brandName, brandLink, routes }) {
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
+  brandName: "Josias Dhz",
   brandLink: "https://www.creative-tim.com",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
     { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
-    { name: "License", path: "https://www.creative-tim.com/license" },
+    { name: "GitHub", path: "https://www.creative-tim.com/blog" },
   ],
 };
 
