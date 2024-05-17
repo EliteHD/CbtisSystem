@@ -1,8 +1,8 @@
-# Aplicativo Web de Control de Inventario <img src="https://scontent.fmtt1-1.fna.fbcdn.net/v/t39.30808-6/298650625_546623163926574_5312328398360023178_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=PrBU0yg-u7UAX9HJK_p&_nc_ht=scontent.fmtt1-1.fna&oh=00_AfAQ7Dcm6LAcKFGbKENIiSlcRHHRma5NF9vIbj8mgZ7c-A&oe=6544EE33" width="100" alt="Logo del Aplicativo">
+# Aplicativo Web de Control de Inventario 
 
 ## Descripción del Proyecto
 
-El Aplicativo Web de Control de Inventario para el CBTIS 123 es una poderosa herramienta diseñada para simplificar y mejorar la gestión del inventario necesario para el funcionamiento del Centro de Bachillerato Tecnológico Industrial y de Servicios (CBTIS) número 123.
+El Aplicativo Web para el cuadro de necesidades semestral, es una poderosa herramienta diseñada para simplificar y mejorar la gestión del inventario necesario para el funcionamiento en bachilleratos
 
 Este aplicativo web proporciona a los responsables de la gestión de inventario una plataforma centralizada y eficiente para la captura, seguimiento y control de los recursos y materiales necesarios para el correcto funcionamiento de la institución. Facilita la planificación y el cumplimiento de las necesidades semestrales de inventario de manera precisa y oportuna.
 
@@ -17,7 +17,7 @@ Este aplicativo web proporciona a los responsables de la gestión de inventario 
 
 ## Uso
 
-El Aplicativo Web de Control de Inventario para el CBTIS 123 es de uso exclusivo para el personal autorizado de la institución. Los usuarios pueden acceder al aplicativo a través de su pagina oficial e iniciar sesión con sus credenciales proporcionadas por la administración.
+El Aplicativo Web de Control de Inventario para el bachilleratos es de uso exclusivo para el personal autorizado de la institución. Los usuarios pueden acceder al aplicativo a través de su pagina oficial e iniciar sesión con sus credenciales proporcionadas por la administración.
 
 ## Licencia
 
