@@ -15,7 +15,7 @@ import { IoMdPersonAdd } from "react-icons/io";
 import { FaUserEdit } from "react-icons/fa";
 import { FaDeleteLeft } from "react-icons/fa6";
 
-export function Tables() {
+export function TablesUser() {
   return (
     <div className="mt-12 mb-8 flex flex-col gap-12">
 
@@ -32,7 +32,7 @@ export function Tables() {
               <Button size='small'
                 type='success'
                 htmlType='submit'
-                onClick={() => { alert('Agregar Usuario') }}
+                // go to component registerUser
                 className="bg-green-500 hover:bg-green-200 p-4 flex items-center rounded-lg">
                 <IoMdPersonAdd style={{ color: 'white' }} />
                 <Typography className="ml-2" variant="h6" color='white'>
@@ -144,4 +144,4 @@ export function Tables() {
   );
 }
 
-export default Tables;
+export default TablesUser;
